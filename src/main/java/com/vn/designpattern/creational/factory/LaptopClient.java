@@ -11,8 +11,13 @@ public class LaptopClient {
 	private static final Logger LOGGER = Logger.getLogger(LaptopClient.class.getName());
 	
 	public static void main(String[] args) {
-		Laptop laptop1 = new Laptop(512, 8, "hp", "intel i5", "black");
-		LOGGER.log(Level.INFO, "Laptop 1 : " + laptop1);
+		Laptop gamingLaptop = LaptopFactory.getLaptop("Gaming");
+		Laptop businessLaptop = LaptopFactory.getLaptop("Business");
+		Laptop ultraBook = LaptopFactory.getLaptop("UltraBook");
+		
+		LOGGER.log(Level.INFO, gamingLaptop.getConfiguration());
+		LOGGER.log(Level.INFO, businessLaptop.getConfiguration());
+		LOGGER.log(Level.INFO, ultraBook.getConfiguration());
 	}
 
 }
