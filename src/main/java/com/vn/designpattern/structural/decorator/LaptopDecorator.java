@@ -4,7 +4,7 @@ public abstract class LaptopDecorator implements Laptop {
 	
 	private Laptop laptop;
 	
-	public LaptopDecorator(Laptop laptop) {
+	protected LaptopDecorator(Laptop laptop) {
 		this.laptop = laptop;
 	}
 	
