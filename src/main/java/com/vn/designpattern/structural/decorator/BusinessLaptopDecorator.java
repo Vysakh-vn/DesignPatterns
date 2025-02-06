@@ -1,6 +1,8 @@
 package com.vn.designpattern.structural.decorator;
 
-import org.yaml.snakeyaml.internal.Logger;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 
 public class BusinessLaptopDecorator extends LaptopDecorator{
 
@@ -12,6 +14,12 @@ public class BusinessLaptopDecorator extends LaptopDecorator{
 	
 	@Override
 	public void specifications() {
+		super.specifications();
+		LOGGER.log(Level.INFO, "Business specification added.");
 	}
 	
+	@Override
+	public int getPrice() {
+		return super.getPrice() + 2000;
+	}
 }
