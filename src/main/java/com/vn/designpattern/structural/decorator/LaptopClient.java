@@ -7,6 +7,11 @@ public class LaptopClient {
 	
 	private static final Logger LOGGER = Logger.getLogger(LaptopClient.class.getName());
 	
+	/*
+	 * - BasicLaptop represent a simple laptop.
+	 * - BusinessLaptopDecorator extends BasicLaptop with additional business features.
+	 * - The decorator pattern allows wrapping basiclaptop to create businessLaptop with enhanced features.
+	 */
 	public static void main(String[] args) {
 		Laptop basicLaptop = new BasicLaptop();
 		basicLaptop.specifications();
