@@ -3,6 +3,15 @@ package com.vn.designpattern.structural.facade;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * LaptopFacade simplifies the process of powering on a laptop by encapsulating
+ * the complex interactions between various subsystems (CPU, Memory, Storage, Battery).
+ *
+ * Advantages of using the Facade Pattern:
+ * - Provides a simple interface to the client.
+ * - Hides the complexities of the underlying system.
+ * - Improves code readability and maintainability.
+ */
 public class LaptopFacade {
 	
 	private CPU cpu;
